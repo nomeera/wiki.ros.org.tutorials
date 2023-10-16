@@ -1,0 +1,2 @@
+beginner_tutorials
+-DCATKIN_DEVEL_PREFIX=/home/nomeer/NoMeEr/Robotics Software/Practice/GitHub/wiki.ros.org.tutorials/first_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nomeer/NoMeEr/Robotics Software/Practice/GitHub/wiki.ros.org.tutorials/first_ws/install -G Unix Makefiles

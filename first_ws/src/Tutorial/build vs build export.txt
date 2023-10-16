@@ -1,0 +1,12 @@
+The key difference between "Build" and "Build Export" dependencies in the context of software package management is the purpose they serve during the build and compilation process of a software package:
+
+1. Build Dependencies:
+   - "Build Dependencies" are packages or resources required to build the package itself. These dependencies are necessary during the compilation and build process of the package. They can include header files, libraries, or other resources that are used directly during the build process.
+   - Build dependencies are essential for generating the compiled binary of the package.
+
+2. Build Export Dependencies:
+   - "Build Export Dependencies" are packages that are needed to build other packages that depend on the current package. These dependencies come into play when you include headers from these packages in the public headers of your package.
+   - When another package depends on the current package and needs access to its headers, it effectively becomes a build export dependency for that package. This allows the dependent package to build correctly and use the headers of the current package.
+   - Build export dependencies are about ensuring that other packages that depend on your package can compile and build successfully because they need access to your package's headers.
+
+In summary, "Build Dependencies" are directly related to the current package's own compilation and build process, while "Build Export Dependencies" are about enabling other packages to compile successfully when they depend on your package. The distinction is particularly important in complex software systems where multiple packages depend on one another.
